@@ -151,8 +151,6 @@ make.daemon <- function(package.name, short.name, dir) {
     return()
   }
   sink(fn)
-  
-  sink(paste0(dir, short.name, "-daemon.R"))
   cat(paste0("#' ", package.name, ": daemon for this package\n"))
   cat("#'\n") 
   cat("#' @import rcvirtual\n")
