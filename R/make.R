@@ -145,7 +145,7 @@ make.conf <- function(package.name, short.name, dir) {
 }
 
 make.daemon <- function(package.name, short.name, dir) {
-  fn <- paste0(dir, "R/", short.name, "-conf.R")
+  fn <- paste0(dir, "R/", short.name, "-daemon.R")
   if (file.exists(fn)) {
     warning('conf exists; file not overwritten.')
     return()
