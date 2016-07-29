@@ -156,7 +156,7 @@ make.daemon <- function(package.name, short.name, dir) {
   cat(paste0("#' ", package.name, ": daemon for this package\n"))
   cat("#'\n") 
   cat("#' @import rcvirtual\n")
-  car(paste0("#' @export ", package.name, "\n"))
+  cat(paste0("#' @export ", package.name, "\n"))
   cat(paste0("#' @exportClass ", package.name, "\n"))
   cat("#'\n")
   cat(paste0(package.name, " <- setRefClass(\n"))
